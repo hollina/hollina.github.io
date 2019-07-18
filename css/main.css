@@ -160,6 +160,7 @@ ul.flat li {
 
 .page-title {
   margin: 0;
+  margin-right: 5px;
 }
 
 .smaller {
@@ -280,7 +281,6 @@ ul {
   max-height: 15px;
 }
 
-
 .email {
   /* color: #a00; */
   font-size: 16px;
@@ -290,13 +290,13 @@ ul {
 
 .collaborators {
   font-size: 15px;
-  margin-left: .9em;
+  margin-left: .5em;
   margin-top: .1em;
 }
 
 .OtherPaperInfo {
   font-size: 15px;
-  margin-left: .9em;
+  margin-left: 0em;
   margin-top: .1em;
 }
 
@@ -319,7 +319,7 @@ ul {
 .code_blog {
     font-family: "Ubuntu Mono";
     font-size: 14px;
-    margin: 0em 0em 0em;
+    margin: 0em .5em 0em;
 }
 
 .blog_cv {
@@ -482,3 +482,13 @@ input#hide:checked ~ span#content {
     font-size: 0;
     overflow: hidden;
 }
+
+/* Steps to post online
+1. Delete public folder
+2. Make sure a content folder exists
+3. Copy all contents to hollina@github.io folder
+4. naviagate in terminal to root of above
+5. run hugo server command
+6. delete everything but the contents of the public folder
+7. move these contents to the root folder
+*/
