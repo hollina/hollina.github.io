@@ -205,6 +205,7 @@ ul {
 }
 
 .header .profile_image {
+  padding-left: 5pt;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -290,7 +291,7 @@ ul {
 
 .collaborators {
   font-size: 15px;
-  margin-left: .5em;
+  margin-left: 0em;
   margin-top: .1em;
 }
 
@@ -310,6 +311,7 @@ ul {
 }
 
 .publications {
+  font-size: 15px;
   margin-left: 0em;
   .half-line {
     line-height: .01em;
@@ -319,7 +321,7 @@ ul {
 .code_blog {
     font-family: "Ubuntu Mono";
     font-size: 14px;
-    margin: 0em .5em 0em;
+    margin: 0em 0em 0em;
 }
 
 .blog_cv {
@@ -491,4 +493,5 @@ input#hide:checked ~ span#content {
 5. run hugo server command
 6. delete everything but the contents of the public folder
 7. move these contents to the root folder
+8. push to github
 */
