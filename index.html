@@ -21,20 +21,55 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Alex Hollingsworth"/>
 <meta name="twitter:description" content=""/>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="css/academicons.min.css"/>
+	
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" /><script src="js/feather.min.js"></script><script src="js/main.js"></script>
-	<script src="myScript.js"></script>
-</head>
+	<script src="js/myScript.js"></script>
 
+
+</head>
 
 	<body>
 		<div class="container wrapper">
 			<div class="container">
-				<div class="header">
+				
+
+
+<link rel="alternate" type="application/rss+xml+xml" href="https://hollina.github.io/index.xml" title="Alex Hollingsworth" />
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Alex Hollingsworth</a>
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" target="_blank" href="hollingsworth_cv_2019.pdf">CV</a>
+      </li><li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" href="#pubs" >Publications</a>
+      </li><li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" href="#working" >Working Papers</a>
+      </li><li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" href="#work_in_progress" >Work in Progress</a>
+      </li><li class="nav-item active">
+        <a class="nav-link" href="#">Teaching</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="header">
 	<img src=https://hollina.github.io/profile.jpg class="profile_image">
-	<h1 class="site-title">Alex Hollingsworth</h1>
+	
+	<h1> </h1>
 	<div class="site-affilation">
 		<span class="affilation"><ul class="flat">
 				<li class="position">Assistant Professor</li><br>
@@ -49,9 +84,10 @@
 		
 
 	<nav class="nav social">
-		<ul class="flat"><a href="https://github.com/hollina"  target="_blank"  title="GitHub"><i data-feather="github"></i>  </a><a href="https://twitter.com/ajhollingsworth"  target="_blank"  title="Twitter"><i data-feather="twitter"></i>  </a><a href="mailto:hollinal@indiana.edu"  target="_blank"  title="Email"><i data-feather="send"></i>  </a>
-			|
-			<a href="hollingsworth_cv_2019.pdf"  target="_blank" class="blog_cv">[cv]</a>
+		<ul class="flat"><a href="https://github.com/hollina"  target="_blank"  title="GitHub"><i data-feather="github"></i>  </a><a href="https://twitter.com/ajhollingsworth"  target="_blank"  title="Twitter"><i data-feather="twitter"></i>  </a><a href="mailto:hollinal@indiana.edu"  target="_blank"  title="Email"><i data-feather="send"></i>  </a><a href="https://scholar.google.com/citations?user=RTX-nkcAAAAJ&hl=en"  target="_blank"  class="ai ai-google-scholar ai-1-5x">  </a>
+
+			
+			<a href="hollingsworth_cv_2019.pdf"  target="_blank" class="ai ai-cv ai-1-5x"></a>
 			
 			
 		</ul>
@@ -66,7 +102,7 @@
 
 </div>
 
-				<div class="introduction"><span>
+				<div class="introduction" style="padding-top: 10px;"><span>
 		<b>Interests:</b> Health economics, regulation, environmental economics, substance abuse, access to care
 	</span>
 
@@ -87,10 +123,10 @@
 	<ul></ul>
 </div>
 
-				
+				<div class="introduction"><br>
+	<div class="year" id="#pubs" >Publications</div>
+	<h5 id="pubs"></h5>
 
-<div class="introduction"><br>
-	<div class="year">Publications</div>
 	<ul style="list-style: none;">
 		
 		<li list-style-position: outside>
@@ -100,9 +136,23 @@
 			<br>
 			<p class="collaborators"> Lin, Lee-Kai., Kosali Simon, <strong>Alex Hollingsworth</strong>, and Brendan Saloner</p>
 			<br>
-			<p class="collaborators"> Journal of General Internal Medicine.</p>
+			<p class="collaborators"> <em>Journal of General Internal Medicine</em>.</p>
 			<p class="OtherPaperInfo"> 2019.</p>
 			
+			<span class="code_blog">
+				
+
+				
+				[<a href="https://rdcu.be/bKEPR"  target="_blank" >ungated link</a>]
+				
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_1')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_1" class="texter">
+        Buprenorphine treatment capacity is limited because buprenorphine can only be prescribed by certified providers. To expand capacity, recent federal initiatives have increased the physician patient cap twice (from 30 to 100 patients and then to 275 patients) and have allowed nurse practitioners and physician assistants to obtain waivers. Previous research has shown that expanding buprenorphine prescribers for Medicaid populations leads to more buprenorphine prescriptions; however, it is unclear if this relationship holds across all payer groups. Our findings suggest that adding one more certified physician increases access for 3.6 patients, but we did not find a statistically significant effect for non-physician prescribers. The effects vary by the physician certification category: an additional provider with a 100-patient limit increases access for 8.71 patients; and an additional provider with a 275-patient limit increases access for 44.09 patients.
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -112,7 +162,7 @@
 			<br>
 			<p class="collaborators"> <strong>Hollingsworth, Alex.</strong>, Aparna Soni, Aaron Carroll, John Cawley, and Kosali Simon</p>
 			<br>
-			<p class="collaborators"> PLoS ONE.</p>
+			<p class="collaborators"> <em>PLoS ONE</em>.</p>
 			<p class="OtherPaperInfo"> 2019.</p>
 			
 			<span class="code_blog">
@@ -121,8 +171,14 @@
 				
 
 				
-			</span>
-			
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_2')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_2" class="texter">
+        In the last decade, health care reform has dominated U.S. public policy and political discourse. Double-digit rate increases in premiums in the Health Insurance Marketplaces established by the Affordable Care Act (ACA) in 2018 make this an ongoing issue that could affect future elections. A seminal event that changed the course of policy and politics around health care reform is the 2016 presidential election. The results of the 2016 presidential election departed considerably from polling forecasts. Given the prominence of the Affordable Care Act in the election, we test whether changes in health insurance coverage at the county-level correlate with changes in party vote share in the presidential elections from 2008 through 2016. We find that a one-percentage-point increase in county health insurance coverage was associated with a 0.25-percentage-point increase in the vote share for the Democratic presidential candidate. We further find that these gains on the part of the Democratic candidate came almost fully at the expense of the Republican (as opposed to third-party) presidential candidates. We also estimate models separately for states that did and did not expand Medicaid and find no differential effect of insurance gains on Democratic vote share for states that expanded Medicaid compared to those that did not. Our results are consistent with the hypothesis that outcomes in health insurance markets played a role in the outcome of the 2016 presidential election. The decisions made by the current administration, and how those decisions affect health insurance coverage and costs, may be important factors in future elections as well.
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -132,7 +188,7 @@
 			<br>
 			<p class="collaborators"> <strong>Hollingsworth, Alex.</strong> and Ivan Rudik</p>
 			<br>
-			<p class="collaborators"> Journal of the Association of Environmental and Resource Economists.</p>
+			<p class="collaborators"> <em>Journal of the Association of Environmental and Resource Economists</em>.</p>
 			<p class="OtherPaperInfo"> 2019.</p>
 			
 			<span class="code_blog">
@@ -143,8 +199,14 @@
 				
 				[<a href="https://ssrn.com/abstract=2697222"  target="_blank" >ungated link</a>]
 				
-			</span>
-			
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_3')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_3" class="texter">
+        Renewable portfolio standards (RPSs) are state-level policies that require in-state electricity providers to procure a minimum percentage of electricity sales from renewable sources. Using theoretical and empirical models, we show how RPSs induce out-of-state emissions reductions through interstate trade of credits used for RPS compliance. When one state passes an RPS, it increases demand for credits sold by firms in other (potentially non-RPS) states. We find that increasing a state’s RPS decreases coal generation and increases wind generation in outside states through this tradable credit channel. We perform a welfare simulation to evaluate the aggregate avoided damage from RPS-induced reductions in local coal-fired pollutants. Our estimates suggest that a 1 percentage point increase in a state’s RPS results in up to $100 million in avoided damages over the United States from reduced pollution. We also find substantial heterogeneity in aggregate avoided damages caused by increases in different states’ RPSs.
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -154,7 +216,7 @@
 			<br>
 			<p class="collaborators"> Zirogiannis, Nikos., <strong>Alex Hollingsworth</strong>, and David Konisky</p>
 			<br>
-			<p class="collaborators"> Environmental Science &amp; Technology.</p>
+			<p class="collaborators"> <em>Environmental Science &amp; Technology</em>.</p>
 			<p class="OtherPaperInfo"> 2018.</p>
 			
 			<span class="code_blog">
@@ -163,8 +225,14 @@
 				
 				[<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3380742"  target="_blank" >ungated link</a>]
 				
-			</span>
-			
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_4')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_4" class="texter">
+        We analyze excess emissions from industrial facilities in Texas using data from the Texas Commission on Environmental Quality. Emissions are characterized as excess if they are beyond a facility’s permitted levels and if they occur during startups, shutdowns, or malfunctions. We provide summary data on both the pollutants most often emitted as excess emissions and the industrial sectors and facilities responsible for those emissions. Excess emissions often represent a substantial share of a facility’s routine (or permitted) emissions. We find that while excess emissions events are frequent, the majority of excess emissions are emitted by the largest events. That is, the sum of emissions in the 96–100th percentile is often several orders of magnitude larger than the remaining excess emissions (i.e., the sum of emissions below the 95th percentile). Thus, the majority of events emit a small amount of pollution relative to the total amount emitted. In addition, a small group of high emitting facilities in the most polluting industrial sectors are responsible for the vast majority of excess emissions. Using an integrated assessment model, we estimate that the health damages in Texas from excess emissions are approximately $150 million annually
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -174,7 +242,7 @@
 			<br>
 			<p class="collaborators"> <strong>Hollingsworth, Alex.</strong>, Chris Ruhm, and Kosali Simon</p>
 			<br>
-			<p class="collaborators"> Journal of Health Economics.</p>
+			<p class="collaborators"> <em>Journal of Health Economics</em>.</p>
 			<p class="OtherPaperInfo"> 2017.</p>
 			
 			<span class="code_blog">
@@ -185,8 +253,14 @@
 				
 				[<a href="https://www.nber.org/papers/w23192"  target="_blank" >ungated link</a>]
 				
-			</span>
-			
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_5')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_5" class="texter">
+        We examine how deaths and emergency department (ED) visits related to use of opioid analgesics (opioids) and other drugs vary with macroeconomic conditions. As the county unemployment rate increases by one percentage point, the opioid death rate per 100,000 rises by 0.19 (3.6%) and the opioid overdose ED visit rate per 100,000 increases by 0.95 (7.0%). Macroeconomic shocks also increase the overall drug death rate, but this increase is driven by rising opioid deaths. Our findings hold when performing a state-level analysis, rather than county-level; are primarily driven by adverse events among whites; and are stable across time periods.
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -196,13 +270,27 @@
 			<br>
 			<p class="collaborators"> Gordon, Paul., Laurel Gray, <strong>Alex Hollingsworth</strong>, Eve Shapiro, and James Dalen</p>
 			<br>
-			<p class="collaborators"> Academic Medicine.</p>
+			<p class="collaborators"> <em>Academic Medicine</em>.</p>
 			<p class="OtherPaperInfo"> 2017.</p>
 			
+			<span class="code_blog">
+				
+
+				
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_16')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_16" class="texter">
+        Prior telephone surveys have reported two main reasons for opposition to the Affordable Care Act (ACA): distrust of government and opposition to the universal coverage mandate. The authors set out to elucidate the reasons for this opposition. This article describes how the authors used qualitative methods with semistructured interviewing as a principal investigative method to gather information from people they met while bicycling across the United States from April through July 2016. During this time, the authors conducted open-ended, semistructured conversations with people they met as they rode their bicycles from Washington, DC, to Seattle, Washington. Informants were chosen as a convenience sample. One hundred sixteen individuals participated as informants. The majority of comments were negative toward the ACA. Conversations were categorized into four themes, which included the following: (1) The ACA has increased the cost of health insurance; (2) government should not tell people what to do; (3) responsibility for ACA problems is diffuse; and (4) the ACA should not pay for other people’s problems. These face-to-face conversations indicated that opposition to the ACA may be due to the fact that many Americans have experienced an increase in the cost of insurance either through increased premiums or greatly increased deductibles. They blame this increase in cost on the ACA, President Obama, the government or insurance companies, and the inclusion of “others” in insurance plans. The authors discuss how these findings can influence medical education curricula to better prepare future physicians to discuss health policy issues with patients.
+       </div>
 		</li>
 		
 	</ul><br>
-	<div class="year">Working Papers</div>
+	<div class="year" id="#working" >Working Papers</div>
+	<h5 id="working"></h5>
+
 	<ul style="list-style: none;">
 		
 		<li list-style-position: outside>
@@ -215,6 +303,18 @@
 			<p class="collaborators"> Revisions Requested. Draft available upon request.</p>
 			<p class="OtherPaperInfo"> </p>
 			
+			<span class="code_blog">
+				
+
+				
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_6')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_6" class="texter">
+        NUMBER 6
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -233,8 +333,14 @@
 				
 
 				
-			</span>
-			
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_7')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_7" class="texter">
+        NUMBER 7
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -247,6 +353,18 @@
 			<p class="collaborators"> Under review. Draft available upon request.</p>
 			<p class="OtherPaperInfo"> </p>
 			
+			<span class="code_blog">
+				
+
+				
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_8')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_8" class="texter">
+        NUMBER 8
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -259,6 +377,18 @@
 			<p class="collaborators"> Under review.</p>
 			<p class="OtherPaperInfo"> </p>
 			
+			<span class="code_blog">
+				
+
+				
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_9')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_9" class="texter">
+        NUMBER 9
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -271,6 +401,18 @@
 			<p class="collaborators"> Under review.</p>
 			<p class="OtherPaperInfo"> </p>
 			
+			<span class="code_blog">
+				
+
+				
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_10')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_10" class="texter">
+        NUMBER 10
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -283,6 +425,18 @@
 			<p class="collaborators"> Under review.</p>
 			<p class="OtherPaperInfo"> </p>
 			
+			<span class="code_blog">
+				
+
+				
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_11')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_11" class="texter">
+        NUMBER 11
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -295,6 +449,18 @@
 			<p class="collaborators"> Under review. Draft available upon request.</p>
 			<p class="OtherPaperInfo"> </p>
 			
+			<span class="code_blog">
+				
+
+				
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_12')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_12" class="texter">
+        NUMBER 12
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -307,10 +473,24 @@
 			<p class="collaborators"> Under review. Draft available upon request.</p>
 			<p class="OtherPaperInfo"> </p>
 			
+			<span class="code_blog">
+				
+
+				
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_13')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_13" class="texter">
+        NUMBER 13
+       </div>
 		</li>
 		
 	</ul><br>
-	<div class="year">Work in Progress</div>
+	<div class="year" id="#work_in_progress" >Work in Progress</div>
+	<h5 id="work_in_progress"></h5>
+
 	<ul style="list-style: none;">
 		
 		<li list-style-position: outside>
@@ -329,8 +509,14 @@
 				
 
 				
-			</span>
-			
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_14')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_14" class="texter">
+        NUMBER 14
+       </div>
 		</li>
 		
 		<li list-style-position: outside>
@@ -343,6 +529,18 @@
 			<p class="collaborators"> </p>
 			<p class="OtherPaperInfo"> </p>
 			
+			<span class="code_blog">
+				
+
+				
+        
+        
+      </span>
+      
+       <div onClick="openClose('a_15')" style="cursor:hand; cursor:pointer;"></div>
+       <div id="a_15" class="texter">
+        NUMBER 15
+       </div>
 		</li>
 		
 	</ul></div>

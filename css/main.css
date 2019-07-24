@@ -123,6 +123,8 @@ h4 {
 h5 {
   font-weight: 300;
   font-size: 1rem;
+  margin-bottom: -1em;
+
 }
 
 h6 {
@@ -208,7 +210,7 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 34%;
+  max-width: 38%;
   height: auto;
   border-radius: 33%;
   float: right;
@@ -220,6 +222,7 @@ ul {
   padding: 0;
   font-size: 1.7rem;
   line-height: 1.3em;
+  margin-block-end: 0em;
 }
 
 .header h2 {
@@ -302,7 +305,7 @@ ul {
 
 .year {
   font-size: 20px;
-  margin-bottom: -.6em;
+  margin-bottom: 0em;
 }
 
 .project {
@@ -494,3 +497,24 @@ input#hide:checked ~ span#content {
 7. move these contents to the root folder
 8. push to github
 */
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+body { 
+    padding-top: 50px; 
+}
+
+h2::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -1000px; 
+  height: 1000px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
