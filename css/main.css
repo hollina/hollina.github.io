@@ -3,6 +3,14 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
+/* Try to remove rounded corners on mobile */
+.navbar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
@@ -125,6 +133,14 @@ h5 {
   font-size: 1rem;
   margin-bottom: -1em;
 
+}
+h5::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -105px; 
+  height: 105px; 
+  visibility: hidden; 
+  pointer-events: none;
 }
 
 h6 {
