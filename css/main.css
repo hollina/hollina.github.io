@@ -330,7 +330,9 @@ ul {
 
 .publications {
   font-size: 15px;
-  margin-left: 0em;
+  /*margin-left: 0em;*/
+     margin: .5em -.25em 0em;
+
   .half-line {
     line-height: .01em;
   }
@@ -382,7 +384,7 @@ ul {
 }
 
 .introduction .introduction-header .meta {
-  padding-left: 5px;
+  padding-left: 0px;
   margin-top: 10px;
 }
 
@@ -416,7 +418,7 @@ ul {
 
 @media (max-width: 767px) {
   body {
-    padding: 20px;
+    padding: 0px;
   }
 
   h1 {
