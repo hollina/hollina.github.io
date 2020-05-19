@@ -134,12 +134,12 @@ h5 {
   margin-bottom: -1em;
 
 }
-h5::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -105px; 
-  height: 105px; 
-  visibility: hidden; 
+h5::before {
+  display: block;
+  content: " ";
+  margin-top: -105px;
+  height: 105px;
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -332,7 +332,7 @@ ul {
   font-size: 15px;
   /*margin-left: 0em;*/
      margin: .5em -.25em 0em;
-
+     color: #a00;
   .half-line {
     line-height: .01em;
   }
@@ -448,8 +448,8 @@ ul {
   }
 }
 
-/* Show/Hide Buttons 
-   https://stackoverflow.com/a/18179404 
+/* Show/Hide Buttons
+   https://stackoverflow.com/a/18179404
 
   body { display: block; }
   p.alert:target { display: none; }
@@ -465,7 +465,7 @@ span#content {
     display: block;
     -webkit-transition: opacity 1s ease-out;
     transition: opacity 1s ease-out;
-    opacity: 0; 
+    opacity: 0;
     height: 0;
     font-size: 0;
     overflow: hidden;
@@ -499,7 +499,7 @@ input#hide:checked ~ span#content {
     display: block;
     -webkit-transition: opacity 1s ease-out;
     transition: opacity 1s ease-out;
-    opacity: 0; 
+    opacity: 0;
     height: 0;
     font-size: 0;
     overflow: hidden;
@@ -524,15 +524,15 @@ input#hide:checked ~ span#content {
   margin-top: 20px;
 }
 
-body { 
-    padding-top: 50px; 
+body {
+    padding-top: 50px;
 }
 
-h2::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -1000px; 
-  height: 1000px; 
-  visibility: hidden; 
+h2::before {
+  display: block;
+  content: " ";
+  margin-top: -1000px;
+  height: 1000px;
+  visibility: hidden;
   pointer-events: none;
 }
