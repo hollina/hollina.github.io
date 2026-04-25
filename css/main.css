@@ -6,9 +6,13 @@
 
 /* Try to remove rounded corners on mobile */
 .navbar {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  /* Match page background — no separate bar; avoid Bootstrap bg-light gray */
+  background-color: #fff;
+  border: none;
+  box-shadow: none;
 }
 
 
@@ -221,6 +225,7 @@ ul {
 .header {
   margin-bottom: 0px;
   /* padding-bottom: 20px; */
+  background-color: #fff;
 }
 
 /* Clear float so the header box wraps the profile image (same pattern as ivanrudik.com / al-folio). */
@@ -292,6 +297,37 @@ ul {
 .header .site-affilation {
   display: flex;
   justify-content: start;
+  margin-top: 0.35rem;
+  line-height: 1.35;
+}
+
+/* Compact spacing between institution blocks; stack lines as blocks (overrides global ul.flat li) */
+.header .site-affilation span.affilation {
+  display: block;
+  width: 100%;
+}
+
+.header .site-affilation ul.flat {
+  display: block;
+  margin: 0 0 0.7em 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header .site-affilation ul.flat:last-of-type {
+  margin-bottom: 0;
+}
+
+.header .site-affilation ul.flat li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.header .site-affilation ul.affilation,
+.header .site-affilation li ul {
+  margin-top: 0.05em;
+  margin-bottom: 0.1em;
 }
 
 .header .site-affilation .email {
@@ -318,6 +354,55 @@ ul {
 
 .header .site-affilation nav ul svg {
   max-height: 15px;
+}
+
+/* Center social icon row: Bootstrap .nav is flex; override justify-content. Hide stray <br> inside nav. */
+.header nav.nav.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header nav.nav.social > br {
+  display: none;
+}
+
+.header nav.nav.social ul.flat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35em 0.5em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header .introduction {
+  text-align: center;
+  padding-top: 0.35rem !important;
+}
+
+.header .introduction > span:first-of-type {
+  text-align: left;
+  display: block;
+}
+
+.header .introduction label.show,
+.header .introduction label.hide {
+  position: static;
+  display: inline-block;
+  margin: 0 0.15em;
+}
+
+.header .introduction span#content {
+  text-align: left;
+  display: block;
 }
 
 .email {
@@ -497,7 +582,7 @@ input#show:checked ~ .show:before {
 input#show:checked ~ .hide:before {
     content: "[Hide Bio]";
     font-family: "Lato";
-    font-size: 17px;
+    font-size: 15px;
     color: #0047AB
 }
 
@@ -507,7 +592,7 @@ input#hide:checked ~ .hide:before {
 input#hide:checked ~ .show:before {
     content: "[Show Bio]";
     font-family: "Lato";
-    font-size: 17px;
+    font-size: 15px;
     color: #0047AB
 }
 input#show:checked ~ span#content {
@@ -545,7 +630,8 @@ input#hide:checked ~ span#content {
 }
 
 body {
-    padding-top: 50px;
+  padding-top: 50px;
+  background-color: #fff;
 }
 
 h2::before {
