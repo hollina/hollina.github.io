@@ -1,4 +1,4 @@
-/* Ubuntu, Ubuntu */
+/* Lato, Lato */
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
@@ -13,7 +13,7 @@
 
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #333;
   line-height: 1.5;
@@ -105,7 +105,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Ubuntu, raleway, sans-serif;
+  font-family: Lato, raleway, sans-serif;
   line-height: 1.2;
   color: #330;
   font-weight: 100;
@@ -223,14 +223,33 @@ ul {
   /* padding-bottom: 20px; */
 }
 
+/* Clear float so the header box wraps the profile image (same pattern as ivanrudik.com / al-folio). */
+.header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Below 576px (Bootstrap "sm"): full-width image above text, like https://ivanrudik.com */
 .header .profile_image {
   display: block;
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  max-width: 38%;
+  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 33%;
-  float: right;
+  float: none;
+}
+
+/* From 576px up: photo on the right with text alongside */
+@media (min-width: 576px) {
+  .header .profile_image {
+    max-width: 38%;
+    float: right;
+    margin-left: 1rem;
+  }
 }
 
 .header h1,
@@ -279,7 +298,7 @@ ul {
   /* color: #a00; */
   font-size: 14px;
   display: block;
-  font-family: "Ubuntu Mono";
+  font-family: "Lato";
   font-weight: bolder;
 }
 
@@ -287,7 +306,7 @@ ul {
   /* color: #a00; */
   /* font-size: 14px; */
   /* display: block; */
-  font-family: Ubuntu;
+  font-family: Lato;
   /* font-weight: bolder; */
 }
 
@@ -304,7 +323,7 @@ ul {
 .email {
   /* color: #a00; */
   font-size: 16px;
-  font-family: "Ubuntu Mono";
+  font-family: "Lato";
   font-weight: bolder;
 }
 
@@ -341,13 +360,13 @@ ul {
 
 
 .code_blog {
-    font-family: "Ubuntu Mono";
+    font-family: "Lato";
     font-size: 14px;
     margin: 0em 0em 0em;
 }
 
 .blog_cv {
-    font-family: "Ubuntu Mono";
+    font-family: "Lato";
     font-size: 17px;
     /* margin: 0em .9em 0em; */
 }
@@ -477,7 +496,7 @@ input#show:checked ~ .show:before {
 }
 input#show:checked ~ .hide:before {
     content: "[Hide Bio]";
-    font-family: "Ubuntu Mono";
+    font-family: "Lato";
     font-size: 17px;
     color: #0047AB
 }
@@ -487,7 +506,7 @@ input#hide:checked ~ .hide:before {
 }
 input#hide:checked ~ .show:before {
     content: "[Show Bio]";
-    font-family: "Ubuntu Mono";
+    font-family: "Lato";
     font-size: 17px;
     color: #0047AB
 }
