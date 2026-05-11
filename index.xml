@@ -4,7 +4,8 @@
     <title>Alex Hollingsworth</title>
     <link>https://hollina.github.io/</link>
     <description>Recent content on Alex Hollingsworth</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://hollina.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://hollina.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
